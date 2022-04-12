@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:weight@200;400&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(161,100,223);
+}
+
 .container {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    flex-direction: row;
     justify-content: center;
-    height: 80vh;
+    text-align: center;
+    height: 90vh;
     overflow: hidden;
     margin: 0;
 }
@@ -21,7 +29,24 @@
     align-items: center;
 }
 
-.section {
-    display: flex;
-    width: 92vw;
+.btn {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 1px solid black;
+    box-shadow: 5px 10px 8px black;
+    opacity: 0.8;
+}
+
+.btn:focus{
+    outline: none;
 }
