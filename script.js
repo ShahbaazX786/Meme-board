@@ -1,14 +1,11 @@
-const panels = document.querySelectorAll('.panel')
+const sounds = ['bababoey','bonk','wow','bom','bruh','c1','c2','c3','c4','c5','c6','c7','shine','yahoo']
 
-panels.forEach(panel => {
-    panel.addEventListener('click',()=>{
-        removeActiveClasses();
-        panel.classList.add('active');
-    })  
+sounds.forEach(sound => {
+    const btn = document.createElement('button')
+    btn.classList.add('btn')
+
+    btn.innerText=sound
+    document.getElementsById('buttons')
+    appendChild(btn)  
+
 })
-
-function removeActiveClasses(){
-    panels.forEach(panel => {
-        panel.classList.remove('active')
-    })
-}
