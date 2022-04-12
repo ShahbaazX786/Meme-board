@@ -4,12 +4,26 @@ sounds.forEach(sound => {
     const btn = document.createElement('button');
     btn.classList.add('btn');
 
+    btn.innerText=sound;
 
     btn.addEventListener('click',()=>{
+        stopmemes();
+
         document.getElementById(sound).play()
     })
 
-    btn.innerText=sound;
     document.getElementById('buttons').appendChild(btn);
 
 })
+
+/*
+//Enable this function only when you want to hear a single meme sound on button press instead of previous meme sound playing in the background
+function stopmemes(){
+    sounds.forEach(sound =>{
+        const meme=document.getElementById(sound);
+
+        meme.pause();
+        meme.currentTime=0;
+    })
+}
+*/
