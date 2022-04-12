@@ -1,0 +1,27 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+#non {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    width: 92vw;
+}
