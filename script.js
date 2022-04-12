@@ -7,7 +7,7 @@ sounds.forEach(sound => {
     btn.innerText=sound;
 
     btn.addEventListener('click',()=>{
-        stopmemes();
+        //stopmemes();
 
         document.getElementById(sound).play()
     })
